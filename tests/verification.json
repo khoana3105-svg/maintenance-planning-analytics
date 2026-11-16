@@ -1,0 +1,22 @@
+{
+  "Source_Rows": 691,
+  "Accepted_Rows": 663,
+  "Rejected_Rows": 28,
+  "Python_Tests": "7 passed",
+  "Excel_Tests": "7 passed",
+  "SQL_Constraints": "3 passed",
+  "SQL_Rerun": "Inserted=0 Updated=0 Skipped=663",
+  "Excel_To_SQL": "663 accepted; Inserted=0 Updated=0 Skipped=663",
+  "PowerBI": "PBIX saved and freshly reopened; direct SQL refresh tested; three pages visually checked; 960 KPI checks and M003 UI slicer test passed",
+  "PowerBI_KPI_Checks": 960,
+  "PowerBI_ZeroFailure": "MTTR and MTBF are BLANK",
+  "PowerBI_Count_Zero": "Due Soon is 0 after saved reopen",
+  "PowerBI_SHA256": "62da4f45d8488bbc2a1e97edf0c65aff50847c91529012eb84a86d88a60f5e79",
+  "PowerBI_Bytes": 98274,
+  "PowerBI_Propagation_Test": {
+    "CSV_fixture_on_copy": true,
+    "Loaded_Events": 404,
+    "Restored_Events": 403,
+    "Fixture_Removed": true
+  }
+}

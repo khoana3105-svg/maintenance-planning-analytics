@@ -1,0 +1,37 @@
+﻿[
+    {
+        "Test":  "Validate baseline",
+        "Pass":  true,
+        "Message":  "PASS: all source tables are valid."
+    },
+    {
+        "Test":  "Refresh PM",
+        "Pass":  true,
+        "Message":  "PM refreshed. Reporting date: 2026-10-31"
+    },
+    {
+        "Test":  "Reject unknown machine",
+        "Pass":  true,
+        "Message":  "Rejected: Machine_ID"
+    },
+    {
+        "Test":  "Submit valid",
+        "Pass":  true,
+        "Message":  "Saved: MT-20261116000623"
+    },
+    {
+        "Test":  "Export blocks negative duration",
+        "Pass":  true,
+        "Message":  "FAIL: Invalid duration/downtime"
+    },
+    {
+        "Test":  "Export 3 source files",
+        "Pass":  true,
+        "Message":  "Exported 3 CSVs: D:\\File Downloads\\Kho phát triển cá nhân\\Maintenance\\exports\\20261116_000625"
+    },
+    {
+        "Test":  "Repeat export unique folder",
+        "Pass":  true,
+        "Message":  "Exported 3 CSVs: D:\\File Downloads\\Kho phát triển cá nhân\\Maintenance\\exports\\20261116_000626"
+    }
+]

@@ -1,0 +1,432 @@
+﻿Maintenance_ID,Machine_ID,Date,Type,Failure_Mode,Duration_Hours,Downtime_Hours,Status
+MT-0001,M001,2026-05-02 08:00:00,Corrective,Air leak,2.28,2.5,Completed
+MT-0002,M001,2026-05-21 14:00:00,Preventive,,0.47,0.0,Completed
+MT-0003,M001,2026-05-22 14:00:00,Preventive,,0.4,0.0,Completed
+MT-0004,M001,2026-06-02 08:00:00,Corrective,Electrical fault,1.2,1.99,Completed
+MT-0005,M001,2026-06-21 14:00:00,Preventive,,0.36,0.0,Completed
+MT-0006,M001,2026-06-22 14:00:00,Preventive,,0.6,0.0,Completed
+MT-0007,M001,2026-07-02 08:00:00,Corrective,Electrical fault,1.06,1.43,Completed
+MT-0008,M001,2026-07-06 08:00:00,Corrective,Electrical fault,2.2,2.85,Completed
+MT-0009,M001,2026-07-21 14:00:00,Preventive,,0.75,0.0,Completed
+MT-0010,M001,2026-07-26 14:00:00,Preventive,,0.68,0.0,Completed
+MT-0011,M001,2026-08-02 08:00:00,Corrective,Sensor alignment,1.44,2.11,Completed
+MT-0012,M001,2026-08-06 08:00:00,Corrective,Air leak,2.52,2.85,Completed
+MT-0013,M001,2026-08-21 14:00:00,Preventive,,0.54,0.0,Completed
+MT-0014,M001,2026-08-26 14:00:00,Preventive,,0.41,0.0,Completed
+MT-0015,M001,2026-09-02 08:00:00,Corrective,Sensor alignment,2.91,3.38,Completed
+MT-0016,M001,2026-09-06 08:00:00,Corrective,Air leak,1.76,2.25,Completed
+MT-0017,M001,2026-09-10 08:00:00,Corrective,Electrical fault,2.21,3.06,Completed
+MT-0018,M001,2026-09-21 14:00:00,Preventive,,0.62,0.0,Completed
+MT-0019,M001,2026-09-26 14:00:00,Preventive,,0.39,0.0,Completed
+MT-0020,M001,2026-10-02 08:00:00,Corrective,Air leak,2.84,3.1,Completed
+MT-0021,M001,2026-10-06 08:00:00,Corrective,Air leak,2.66,3.35,Completed
+MT-0022,M001,2026-10-10 08:00:00,Corrective,Sensor alignment,2.15,2.91,Completed
+MT-0023,M001,2026-10-21 14:00:00,Preventive,,0.76,0.0,Completed
+MT-0024,M002,2026-05-02 08:00:00,Corrective,Sensor alignment,2.55,3.54,Completed
+MT-0025,M002,2026-05-21 14:00:00,Preventive,,0.91,0.0,Completed
+MT-0026,M002,2026-05-22 14:00:00,Preventive,,0.57,0.0,Completed
+MT-0027,M002,2026-06-02 08:00:00,Corrective,Sensor alignment,1.91,2.78,Completed
+MT-0028,M002,2026-06-21 14:00:00,Preventive,,0.56,0.0,Completed
+MT-0029,M002,2026-06-22 14:00:00,Preventive,,0.45,0.0,Completed
+MT-0030,M002,2026-07-02 08:00:00,Corrective,Electrical fault,1.53,2.48,Completed
+MT-0031,M002,2026-07-06 08:00:00,Corrective,Electrical fault,1.14,1.85,Completed
+MT-0032,M002,2026-07-21 14:00:00,Preventive,,0.81,0.0,Completed
+MT-0033,M002,2026-07-26 14:00:00,Preventive,,0.41,0.0,Completed
+MT-0034,M002,2026-08-02 08:00:00,Corrective,Electrical fault,1.76,2.75,Completed
+MT-0035,M002,2026-08-06 08:00:00,Corrective,Air leak,2.38,2.76,Completed
+MT-0036,M002,2026-08-21 14:00:00,Preventive,,0.89,0.0,Completed
+MT-0037,M002,2026-08-26 14:00:00,Preventive,,0.84,0.0,Completed
+MT-0038,M002,2026-09-02 08:00:00,Corrective,Air leak,1.46,1.69,Completed
+MT-0039,M002,2026-09-06 08:00:00,Corrective,Electrical fault,1.8,2.05,Completed
+MT-0040,M002,2026-09-10 08:00:00,Corrective,Electrical fault,2.75,3.2,Completed
+MT-0041,M002,2026-09-21 14:00:00,Preventive,,0.65,0.0,Completed
+MT-0042,M002,2026-09-26 14:00:00,Preventive,,0.92,0.0,Completed
+MT-0043,M002,2026-10-02 08:00:00,Corrective,Sensor alignment,2.29,2.6,Completed
+MT-0044,M002,2026-10-06 08:00:00,Corrective,Air leak,1.49,2.14,Completed
+MT-0045,M002,2026-10-10 08:00:00,Corrective,Electrical fault,2.49,3.03,Completed
+MT-0046,M002,2026-10-21 14:00:00,Preventive,,0.58,0.0,Completed
+MT-0047,M003,2026-05-02 08:00:00,Corrective,Bearing wear,2.88,3.88,Completed
+MT-0048,M003,2026-05-06 08:00:00,Corrective,Bearing wear,4.04,4.31,Completed
+MT-0049,M003,2026-05-10 08:00:00,Corrective,Bearing wear,2.19,2.48,Completed
+MT-0050,M003,2026-05-14 08:00:00,Corrective,Bearing wear,4.51,5.34,Completed
+MT-0051,M003,2026-05-18 08:00:00,Corrective,Bearing wear,3.69,3.94,Completed
+MT-0052,M003,2026-05-21 14:00:00,Preventive,,0.57,0.0,Completed
+MT-0053,M003,2026-05-22 14:00:00,Preventive,,1.0,0.0,Completed
+MT-0054,M003,2026-06-02 08:00:00,Corrective,Bearing wear,4.12,5.1,Completed
+MT-0055,M003,2026-06-06 08:00:00,Corrective,Bearing wear,5.44,5.65,Completed
+MT-0056,M003,2026-06-10 08:00:00,Corrective,Bearing wear,4.88,5.63,Completed
+MT-0057,M003,2026-06-14 08:00:00,Corrective,Bearing wear,4.15,4.56,Completed
+MT-0058,M003,2026-06-18 08:00:00,Corrective,Bearing wear,4.56,4.85,Completed
+MT-0059,M003,2026-06-21 14:00:00,Preventive,,0.6,0.0,Completed
+MT-0060,M003,2026-06-22 14:00:00,Preventive,,0.62,0.0,Completed
+MT-0061,M003,2026-07-02 08:00:00,Corrective,Bearing wear,5.82,6.72,Completed
+MT-0062,M003,2026-07-06 08:00:00,Corrective,Bearing wear,3.05,3.65,Completed
+MT-0063,M003,2026-07-10 08:00:00,Corrective,Bearing wear,2.71,3.64,Completed
+MT-0064,M003,2026-07-14 08:00:00,Corrective,Bearing wear,5.48,5.92,Completed
+MT-0065,M003,2026-07-18 08:00:00,Corrective,Bearing wear,4.56,5.25,Completed
+MT-0066,M003,2026-07-21 14:00:00,Preventive,,0.41,0.0,Completed
+MT-0067,M003,2026-07-26 14:00:00,Preventive,,0.83,0.0,Completed
+MT-0068,M003,2026-08-02 08:00:00,Corrective,Bearing wear,4.16,4.98,Completed
+MT-0069,M003,2026-08-06 08:00:00,Corrective,Bearing wear,4.12,4.32,Completed
+MT-0070,M003,2026-08-10 08:00:00,Corrective,Bearing wear,3.3,3.52,Completed
+MT-0071,M003,2026-08-14 08:00:00,Corrective,Bearing wear,5.72,6.62,Completed
+MT-0072,M003,2026-08-18 08:00:00,Corrective,Bearing wear,5.33,5.78,Completed
+MT-0073,M003,2026-08-21 14:00:00,Preventive,,0.34,0.0,Completed
+MT-0074,M003,2026-08-26 14:00:00,Preventive,,0.91,0.0,Completed
+MT-0075,M003,2026-09-02 08:00:00,Corrective,Bearing wear,5.79,6.06,Completed
+MT-0076,M003,2026-09-06 08:00:00,Corrective,Bearing wear,3.94,4.2,Completed
+MT-0077,M003,2026-09-10 08:00:00,Corrective,Bearing wear,5.04,5.85,Completed
+MT-0078,M003,2026-09-14 08:00:00,Corrective,Bearing wear,2.51,3.09,Completed
+MT-0079,M003,2026-09-18 08:00:00,Corrective,Bearing wear,4.2,4.61,Completed
+MT-0080,M003,2026-09-21 14:00:00,Preventive,,0.91,0.0,Completed
+MT-0081,M003,2026-09-26 14:00:00,Preventive,,0.6,0.0,Completed
+MT-0082,M003,2026-10-02 08:00:00,Corrective,Bearing wear,2.85,3.48,Completed
+MT-0083,M003,2026-10-06 08:00:00,Corrective,Bearing wear,4.92,5.28,Completed
+MT-0084,M003,2026-10-10 08:00:00,Corrective,Bearing wear,3.25,4.25,Completed
+MT-0085,M003,2026-10-14 08:00:00,Corrective,Bearing wear,4.6,5.15,Completed
+MT-0086,M003,2026-10-18 08:00:00,Corrective,Bearing wear,4.07,4.37,Completed
+MT-0087,M003,2026-10-21 14:00:00,Preventive,,0.46,0.0,Completed
+MT-0088,M004,2026-05-02 08:00:00,Corrective,Sensor alignment,1.68,2.35,Completed
+MT-0089,M004,2026-05-21 14:00:00,Preventive,,0.71,0.0,Completed
+MT-0090,M004,2026-05-22 14:00:00,Preventive,,0.31,0.0,Completed
+MT-0091,M004,2026-06-02 08:00:00,Corrective,Sensor alignment,2.42,2.67,Completed
+MT-0092,M004,2026-06-21 14:00:00,Preventive,,0.93,0.0,Completed
+MT-0093,M004,2026-06-22 14:00:00,Preventive,,0.9,0.0,Completed
+MT-0094,M004,2026-07-02 08:00:00,Corrective,Electrical fault,1.14,1.53,Completed
+MT-0095,M004,2026-07-06 08:00:00,Corrective,Electrical fault,1.97,2.6,Completed
+MT-0096,M004,2026-07-21 14:00:00,Preventive,,0.95,0.0,Completed
+MT-0097,M004,2026-07-26 14:00:00,Preventive,,0.7,0.0,Completed
+MT-0098,M004,2026-08-02 08:00:00,Corrective,Air leak,1.95,2.78,Completed
+MT-0099,M004,2026-08-06 08:00:00,Corrective,Air leak,1.38,1.66,Completed
+MT-0100,M004,2026-08-21 14:00:00,Preventive,,0.55,0.0,Completed
+MT-0101,M004,2026-08-26 14:00:00,Preventive,,0.59,0.0,Completed
+MT-0102,M004,2026-09-02 08:00:00,Corrective,Electrical fault,2.73,2.97,Completed
+MT-0103,M004,2026-09-06 08:00:00,Corrective,Air leak,2.97,3.25,Completed
+MT-0104,M004,2026-09-10 08:00:00,Corrective,Sensor alignment,2.46,3.3,Completed
+MT-0105,M004,2026-09-21 14:00:00,Preventive,,0.47,0.0,Completed
+MT-0106,M004,2026-09-26 14:00:00,Preventive,,0.43,0.0,Completed
+MT-0107,M004,2026-10-02 08:00:00,Corrective,Air leak,1.9,2.44,Completed
+MT-0108,M004,2026-10-06 08:00:00,Corrective,Sensor alignment,1.93,2.83,Completed
+MT-0109,M004,2026-10-10 08:00:00,Corrective,Electrical fault,1.89,2.78,Completed
+MT-0110,M004,2026-10-21 14:00:00,Preventive,,0.37,0.0,Completed
+MT-0111,M005,2026-05-02 08:00:00,Corrective,Sensor alignment,2.3,2.93,Completed
+MT-0112,M005,2026-05-21 14:00:00,Preventive,,0.98,0.0,Completed
+MT-0113,M005,2026-05-22 14:00:00,Preventive,,0.95,0.0,Completed
+MT-0114,M005,2026-06-02 08:00:00,Corrective,Air leak,2.7,3.03,Completed
+MT-0115,M005,2026-06-21 14:00:00,Preventive,,0.64,0.0,Completed
+MT-0116,M005,2026-06-22 14:00:00,Preventive,,0.91,0.0,Completed
+MT-0117,M005,2026-07-02 08:00:00,Corrective,Sensor alignment,2.8,3.13,Completed
+MT-0118,M005,2026-07-06 08:00:00,Corrective,Air leak,2.97,3.38,Completed
+MT-0119,M005,2026-07-21 14:00:00,Preventive,,0.5,0.0,Completed
+MT-0120,M005,2026-07-26 14:00:00,Preventive,,0.79,0.0,Completed
+MT-0121,M005,2026-08-02 08:00:00,Corrective,Electrical fault,2.46,3.29,Completed
+MT-0122,M005,2026-08-06 08:00:00,Corrective,Air leak,2.44,2.76,Completed
+MT-0123,M005,2026-08-21 14:00:00,Preventive,,0.45,0.0,Completed
+MT-0124,M005,2026-08-26 14:00:00,Preventive,,0.34,0.0,Completed
+MT-0125,M005,2026-09-02 08:00:00,Corrective,Air leak,2.47,2.72,Completed
+MT-0126,M005,2026-09-06 08:00:00,Corrective,Electrical fault,1.11,1.78,Completed
+MT-0127,M005,2026-09-10 08:00:00,Corrective,Sensor alignment,2.84,3.46,Completed
+MT-0128,M005,2026-09-21 14:00:00,Preventive,,0.97,0.0,Completed
+MT-0129,M005,2026-09-26 14:00:00,Preventive,,0.36,0.0,Completed
+MT-0130,M005,2026-10-02 08:00:00,Corrective,Electrical fault,1.37,2.05,Completed
+MT-0131,M005,2026-10-06 08:00:00,Corrective,Electrical fault,2.72,3.24,Completed
+MT-0132,M005,2026-10-10 08:00:00,Corrective,Electrical fault,1.49,2.17,Completed
+MT-0133,M005,2026-10-21 14:00:00,Preventive,,0.36,0.0,Completed
+MT-0134,M006,2026-05-02 08:00:00,Corrective,Air leak,2.31,2.96,Completed
+MT-0135,M006,2026-05-21 14:00:00,Preventive,,0.95,0.0,Completed
+MT-0136,M006,2026-05-22 14:00:00,Preventive,,0.44,0.0,Completed
+MT-0137,M006,2026-06-02 08:00:00,Corrective,Air leak,2.43,2.82,Completed
+MT-0138,M006,2026-06-21 14:00:00,Preventive,,0.39,0.0,Completed
+MT-0139,M006,2026-06-22 14:00:00,Preventive,,0.75,0.0,Completed
+MT-0140,M006,2026-07-02 08:00:00,Corrective,Sensor alignment,1.91,2.85,Completed
+MT-0141,M006,2026-07-21 14:00:00,Preventive,,0.31,0.0,Completed
+MT-0142,M006,2026-07-22 14:00:00,Preventive,,0.73,0.0,Completed
+MT-0143,M006,2026-08-02 08:00:00,Corrective,Electrical fault,2.13,2.41,Completed
+MT-0144,M006,2026-08-21 14:00:00,Preventive,,0.45,0.0,Completed
+MT-0145,M006,2026-08-22 14:00:00,Preventive,,0.49,0.0,Completed
+MT-0146,M006,2026-09-02 08:00:00,Corrective,Sensor alignment,2.87,3.77,Completed
+MT-0147,M006,2026-09-21 14:00:00,Preventive,,0.56,0.0,Completed
+MT-0148,M006,2026-09-22 14:00:00,Preventive,,0.41,0.0,Completed
+MT-0149,M006,2026-10-02 08:00:00,Corrective,Electrical fault,2.67,3.43,Completed
+MT-0150,M006,2026-10-21 14:00:00,Preventive,,0.99,0.0,Completed
+MT-0151,M006,2026-10-22 14:00:00,Preventive,,0.86,0.0,Completed
+MT-0152,M007,2026-05-02 08:00:00,Corrective,Electrical fault,2.06,2.79,Completed
+MT-0153,M007,2026-05-21 14:00:00,Preventive,,0.51,0.0,Completed
+MT-0154,M007,2026-05-22 14:00:00,Preventive,,0.76,0.0,Completed
+MT-0155,M007,2026-06-02 08:00:00,Corrective,Sensor alignment,2.88,3.19,Completed
+MT-0156,M007,2026-06-21 14:00:00,Preventive,,0.92,0.0,Completed
+MT-0157,M007,2026-06-22 14:00:00,Preventive,,0.82,0.0,Completed
+MT-0158,M007,2026-07-02 08:00:00,Corrective,Sensor alignment,1.31,1.74,Completed
+MT-0159,M007,2026-07-21 14:00:00,Preventive,,0.8,0.0,Completed
+MT-0160,M007,2026-07-22 14:00:00,Preventive,,0.44,0.0,Completed
+MT-0161,M007,2026-08-02 08:00:00,Corrective,Air leak,2.27,2.68,Completed
+MT-0162,M007,2026-08-21 14:00:00,Preventive,,0.48,0.0,Completed
+MT-0163,M007,2026-08-22 14:00:00,Preventive,,0.94,0.0,Completed
+MT-0164,M007,2026-09-02 08:00:00,Corrective,Air leak,1.1,1.81,Completed
+MT-0165,M007,2026-09-21 14:00:00,Preventive,,0.33,0.0,Completed
+MT-0166,M007,2026-09-22 14:00:00,Preventive,,0.53,0.0,Completed
+MT-0167,M007,2026-10-02 08:00:00,Corrective,Sensor alignment,1.26,2.24,Completed
+MT-0168,M007,2026-10-21 14:00:00,Preventive,,0.82,0.0,Completed
+MT-0169,M007,2026-10-22 14:00:00,Preventive,,0.69,0.0,Completed
+MT-0170,M008,2026-05-02 08:00:00,Corrective,Sensor alignment,1.86,2.07,Completed
+MT-0171,M008,2026-05-21 14:00:00,Preventive,,0.96,0.0,Completed
+MT-0172,M008,2026-05-22 14:00:00,Preventive,,0.78,0.0,Completed
+MT-0173,M008,2026-06-02 08:00:00,Corrective,Air leak,1.3,1.53,Completed
+MT-0174,M008,2026-06-21 14:00:00,Preventive,,0.71,0.0,Completed
+MT-0175,M008,2026-06-22 14:00:00,Preventive,,0.4,0.0,Completed
+MT-0176,M008,2026-07-02 08:00:00,Corrective,Sensor alignment,1.25,1.7,Completed
+MT-0177,M008,2026-07-21 14:00:00,Preventive,,0.93,0.0,Completed
+MT-0178,M008,2026-07-22 14:00:00,Preventive,,0.45,0.0,Completed
+MT-0179,M008,2026-08-02 08:00:00,Corrective,Electrical fault,1.5,1.78,Completed
+MT-0180,M008,2026-08-21 14:00:00,Preventive,,0.92,0.0,Completed
+MT-0181,M008,2026-08-22 14:00:00,Preventive,,0.58,0.0,Completed
+MT-0182,M008,2026-09-02 08:00:00,Corrective,Sensor alignment,2.24,2.56,Completed
+MT-0183,M008,2026-09-21 14:00:00,Preventive,,0.91,0.0,Completed
+MT-0184,M008,2026-09-22 14:00:00,Preventive,,0.98,0.0,Completed
+MT-0185,M008,2026-10-02 08:00:00,Corrective,Sensor alignment,2.62,3.53,Completed
+MT-0186,M008,2026-10-21 14:00:00,Preventive,,0.43,0.0,Completed
+MT-0187,M008,2026-10-22 14:00:00,Preventive,,0.95,0.0,Completed
+MT-0188,M009,2026-05-02 08:00:00,Corrective,Electrical fault,2.56,3.09,Completed
+MT-0189,M009,2026-05-21 14:00:00,Preventive,,0.9,0.0,Completed
+MT-0190,M009,2026-05-22 14:00:00,Preventive,,0.87,0.0,Completed
+MT-0191,M009,2026-06-02 08:00:00,Corrective,Sensor alignment,1.53,2.36,Completed
+MT-0192,M009,2026-06-21 14:00:00,Preventive,,0.57,0.0,Completed
+MT-0193,M009,2026-06-22 14:00:00,Preventive,,0.33,0.0,Completed
+MT-0194,M009,2026-07-02 08:00:00,Corrective,Air leak,1.94,2.3,Completed
+MT-0195,M009,2026-07-21 14:00:00,Preventive,,0.54,0.0,Completed
+MT-0196,M009,2026-07-22 14:00:00,Preventive,,0.87,0.0,Completed
+MT-0197,M009,2026-08-02 08:00:00,Corrective,Electrical fault,2.74,3.12,Completed
+MT-0198,M009,2026-08-21 14:00:00,Preventive,,0.44,0.0,Completed
+MT-0199,M009,2026-08-22 14:00:00,Preventive,,0.53,0.0,Completed
+MT-0200,M009,2026-09-02 08:00:00,Corrective,Air leak,2.73,3.7,Completed
+MT-0201,M009,2026-09-21 14:00:00,Preventive,,0.55,0.0,Completed
+MT-0202,M009,2026-09-22 14:00:00,Preventive,,0.66,0.0,Completed
+MT-0203,M009,2026-10-02 08:00:00,Corrective,Air leak,2.36,3.23,Completed
+MT-0204,M009,2026-10-21 14:00:00,Preventive,,0.96,0.0,Completed
+MT-0205,M009,2026-10-22 14:00:00,Preventive,,0.38,0.0,Completed
+MT-0206,M010,2026-05-02 08:00:00,Corrective,Air leak,2.94,3.28,Completed
+MT-0207,M010,2026-05-21 14:00:00,Preventive,,0.33,0.0,Completed
+MT-0208,M010,2026-05-22 14:00:00,Preventive,,0.72,0.0,Completed
+MT-0209,M010,2026-06-02 08:00:00,Corrective,Air leak,1.69,2.52,Completed
+MT-0210,M010,2026-06-21 14:00:00,Preventive,,0.72,0.0,Completed
+MT-0211,M010,2026-06-22 14:00:00,Preventive,,0.66,0.0,Completed
+MT-0212,M010,2026-07-02 08:00:00,Corrective,Air leak,1.77,2.43,Completed
+MT-0213,M010,2026-07-21 14:00:00,Preventive,,0.33,0.0,Completed
+MT-0214,M010,2026-07-22 14:00:00,Preventive,,0.61,0.0,Completed
+MT-0215,M010,2026-08-02 08:00:00,Corrective,Electrical fault,2.04,2.89,Completed
+MT-0216,M010,2026-08-21 14:00:00,Preventive,,0.8,0.0,Completed
+MT-0217,M010,2026-08-22 14:00:00,Preventive,,0.82,0.0,Completed
+MT-0218,M010,2026-09-02 08:00:00,Corrective,Sensor alignment,2.34,2.83,Completed
+MT-0219,M010,2026-09-21 14:00:00,Preventive,,0.96,0.0,Completed
+MT-0220,M010,2026-09-22 14:00:00,Preventive,,0.94,0.0,Completed
+MT-0221,M010,2026-10-02 08:00:00,Corrective,Sensor alignment,2.25,2.98,Completed
+MT-0222,M010,2026-10-21 14:00:00,Preventive,,0.8,0.0,Completed
+MT-0223,M010,2026-10-22 14:00:00,Preventive,,0.51,0.0,Completed
+MT-0224,M011,2026-05-02 08:00:00,Corrective,Air leak,1.62,2.15,Completed
+MT-0225,M011,2026-05-21 14:00:00,Preventive,,0.79,0.0,Completed
+MT-0226,M011,2026-05-22 14:00:00,Preventive,,0.69,0.0,Completed
+MT-0227,M011,2026-06-02 08:00:00,Corrective,Air leak,1.38,2.11,Completed
+MT-0228,M011,2026-06-21 14:00:00,Preventive,,0.77,0.0,Completed
+MT-0229,M011,2026-06-22 14:00:00,Preventive,,0.93,0.0,Completed
+MT-0230,M011,2026-07-02 08:00:00,Corrective,Electrical fault,2.23,2.67,Completed
+MT-0231,M011,2026-07-21 14:00:00,Preventive,,0.88,0.0,Completed
+MT-0232,M011,2026-07-22 14:00:00,Preventive,,0.51,0.0,Completed
+MT-0233,M011,2026-08-02 08:00:00,Corrective,Electrical fault,1.42,2.25,Completed
+MT-0234,M011,2026-08-21 14:00:00,Preventive,,0.76,0.0,Completed
+MT-0235,M011,2026-08-22 14:00:00,Preventive,,0.63,0.0,Completed
+MT-0236,M011,2026-09-02 08:00:00,Corrective,Air leak,1.88,2.25,Completed
+MT-0237,M011,2026-09-21 14:00:00,Preventive,,0.86,0.0,Completed
+MT-0238,M011,2026-09-22 14:00:00,Preventive,,0.97,0.0,Completed
+MT-0239,M011,2026-10-02 08:00:00,Corrective,Air leak,2.47,3.2,Completed
+MT-0240,M011,2026-10-21 14:00:00,Preventive,,0.66,0.0,Completed
+MT-0241,M011,2026-10-22 14:00:00,Preventive,,0.74,0.0,Completed
+MT-0242,M012,2026-05-02 08:00:00,Corrective,Sensor alignment,1.67,2.52,Completed
+MT-0243,M012,2026-05-21 14:00:00,Preventive,,0.77,0.0,Completed
+MT-0244,M012,2026-05-22 14:00:00,Preventive,,0.46,0.0,Completed
+MT-0245,M012,2026-06-02 08:00:00,Corrective,Sensor alignment,1.4,1.62,Completed
+MT-0246,M012,2026-06-21 14:00:00,Preventive,,0.99,0.0,Completed
+MT-0247,M012,2026-06-22 14:00:00,Preventive,,0.73,0.0,Completed
+MT-0248,M012,2026-07-02 08:00:00,Corrective,Electrical fault,2.54,3.1,Completed
+MT-0249,M012,2026-07-21 14:00:00,Preventive,,0.7,0.0,Completed
+MT-0250,M012,2026-07-22 14:00:00,Preventive,,0.8,0.0,Completed
+MT-0251,M012,2026-08-02 08:00:00,Corrective,Sensor alignment,1.77,2.29,Completed
+MT-0252,M012,2026-08-21 14:00:00,Preventive,,0.76,0.0,Completed
+MT-0253,M012,2026-08-22 14:00:00,Preventive,,0.3,0.0,Completed
+MT-0254,M012,2026-09-02 08:00:00,Corrective,Sensor alignment,2.5,3.32,Completed
+MT-0255,M012,2026-09-21 14:00:00,Preventive,,0.84,0.0,Completed
+MT-0256,M012,2026-09-22 14:00:00,Preventive,,0.45,0.0,Completed
+MT-0257,M012,2026-10-02 08:00:00,Corrective,Air leak,2.61,3.37,Completed
+MT-0258,M012,2026-10-21 14:00:00,Preventive,,0.34,0.0,Completed
+MT-0259,M012,2026-10-22 14:00:00,Preventive,,0.47,0.0,Completed
+MT-0260,M013,2026-05-02 08:00:00,Corrective,Air leak,2.7,3.27,Completed
+MT-0261,M013,2026-05-21 14:00:00,Preventive,,0.77,0.0,Completed
+MT-0262,M013,2026-05-22 14:00:00,Preventive,,0.99,0.0,Completed
+MT-0263,M013,2026-06-02 08:00:00,Corrective,Air leak,2.19,3.15,Completed
+MT-0264,M013,2026-06-21 14:00:00,Preventive,,0.73,0.0,Completed
+MT-0265,M013,2026-06-22 14:00:00,Preventive,,0.8,0.0,Completed
+MT-0266,M013,2026-07-02 08:00:00,Corrective,Electrical fault,2.01,2.87,Completed
+MT-0267,M013,2026-07-21 14:00:00,Preventive,,0.61,0.0,Completed
+MT-0268,M013,2026-07-22 14:00:00,Preventive,,0.41,0.0,Completed
+MT-0269,M013,2026-08-02 08:00:00,Corrective,Sensor alignment,2.72,3.28,Completed
+MT-0270,M013,2026-08-21 14:00:00,Preventive,,0.89,0.0,Completed
+MT-0271,M013,2026-08-22 14:00:00,Preventive,,0.49,0.0,Completed
+MT-0272,M013,2026-09-02 08:00:00,Corrective,Sensor alignment,2.56,3.15,Completed
+MT-0273,M013,2026-09-21 14:00:00,Preventive,,0.49,0.0,Completed
+MT-0274,M013,2026-09-22 14:00:00,Preventive,,0.35,0.0,Completed
+MT-0275,M013,2026-10-02 08:00:00,Corrective,Air leak,1.57,1.99,Completed
+MT-0276,M013,2026-10-21 14:00:00,Preventive,,0.93,0.0,Completed
+MT-0277,M013,2026-10-22 14:00:00,Preventive,,0.36,0.0,Completed
+MT-0278,M014,2026-05-02 08:00:00,Corrective,Sensor alignment,1.3,1.81,Completed
+MT-0279,M014,2026-05-21 14:00:00,Preventive,,0.79,0.0,Completed
+MT-0280,M014,2026-05-22 14:00:00,Preventive,,0.34,0.0,Completed
+MT-0281,M014,2026-06-02 08:00:00,Corrective,Air leak,1.82,2.45,Completed
+MT-0282,M014,2026-06-21 14:00:00,Preventive,,0.34,0.0,Completed
+MT-0283,M014,2026-06-22 14:00:00,Preventive,,0.88,0.0,Completed
+MT-0284,M014,2026-07-02 08:00:00,Corrective,Electrical fault,1.78,2.6,Completed
+MT-0285,M014,2026-07-21 14:00:00,Preventive,,0.31,0.0,Completed
+MT-0286,M014,2026-07-22 14:00:00,Preventive,,0.92,0.0,Completed
+MT-0287,M014,2026-08-02 08:00:00,Corrective,Air leak,2.15,2.73,Completed
+MT-0288,M014,2026-08-21 14:00:00,Preventive,,0.51,0.0,Completed
+MT-0289,M014,2026-08-22 14:00:00,Preventive,,0.57,0.0,Completed
+MT-0290,M014,2026-09-02 08:00:00,Corrective,Electrical fault,2.78,3.65,Completed
+MT-0291,M014,2026-09-21 14:00:00,Preventive,,0.82,0.0,Completed
+MT-0292,M014,2026-09-22 14:00:00,Preventive,,0.68,0.0,Completed
+MT-0293,M014,2026-10-02 08:00:00,Corrective,Sensor alignment,2.21,2.59,Completed
+MT-0294,M014,2026-10-21 14:00:00,Preventive,,0.49,0.0,Completed
+MT-0295,M014,2026-10-22 14:00:00,Preventive,,0.64,0.0,Completed
+MT-0296,M015,2026-05-02 08:00:00,Corrective,Air leak,1.78,2.52,Completed
+MT-0297,M015,2026-05-21 14:00:00,Preventive,,0.81,0.0,Completed
+MT-0298,M015,2026-05-22 14:00:00,Preventive,,0.89,0.0,Completed
+MT-0299,M015,2026-06-02 08:00:00,Corrective,Electrical fault,2.84,3.82,Completed
+MT-0300,M015,2026-06-21 14:00:00,Preventive,,0.32,0.0,Completed
+MT-0301,M015,2026-06-22 14:00:00,Preventive,,0.58,0.0,Completed
+MT-0302,M015,2026-07-02 08:00:00,Corrective,Electrical fault,2.13,2.35,Completed
+MT-0303,M015,2026-07-21 14:00:00,Preventive,,0.6,0.0,Completed
+MT-0304,M015,2026-07-22 14:00:00,Preventive,,0.91,0.0,Completed
+MT-0305,M015,2026-08-02 08:00:00,Corrective,Air leak,1.36,1.77,Completed
+MT-0306,M015,2026-08-21 14:00:00,Preventive,,0.45,0.0,Completed
+MT-0307,M015,2026-08-22 14:00:00,Preventive,,0.53,0.0,Completed
+MT-0308,M015,2026-09-02 08:00:00,Corrective,Air leak,2.52,3.02,Completed
+MT-0309,M015,2026-09-21 14:00:00,Preventive,,0.48,0.0,Completed
+MT-0310,M015,2026-09-22 14:00:00,Preventive,,0.36,0.0,Completed
+MT-0311,M015,2026-10-02 08:00:00,Corrective,Air leak,1.04,1.67,Completed
+MT-0312,M015,2026-10-21 14:00:00,Preventive,,0.46,0.0,Completed
+MT-0313,M015,2026-10-22 14:00:00,Preventive,,0.35,0.0,Completed
+MT-0314,M016,2026-05-02 08:00:00,Corrective,Sensor alignment,2.91,3.14,Completed
+MT-0315,M016,2026-05-21 14:00:00,Preventive,,0.96,0.0,Completed
+MT-0316,M016,2026-05-22 14:00:00,Preventive,,0.44,0.0,Completed
+MT-0317,M016,2026-06-02 08:00:00,Corrective,Sensor alignment,1.04,1.36,Completed
+MT-0318,M016,2026-06-21 14:00:00,Preventive,,0.63,0.0,Completed
+MT-0319,M016,2026-06-22 14:00:00,Preventive,,0.38,0.0,Completed
+MT-0320,M016,2026-07-02 08:00:00,Corrective,Air leak,2.9,3.47,Completed
+MT-0321,M016,2026-07-21 14:00:00,Preventive,,0.84,0.0,Completed
+MT-0322,M016,2026-07-22 14:00:00,Preventive,,0.42,0.0,Completed
+MT-0323,M016,2026-08-02 08:00:00,Corrective,Sensor alignment,2.21,3.01,Completed
+MT-0324,M016,2026-08-21 14:00:00,Preventive,,0.84,0.0,Completed
+MT-0325,M016,2026-08-22 14:00:00,Preventive,,0.41,0.0,Completed
+MT-0326,M016,2026-09-02 08:00:00,Corrective,Air leak,1.62,2.28,Completed
+MT-0327,M016,2026-09-21 14:00:00,Preventive,,0.7,0.0,Completed
+MT-0328,M016,2026-09-22 14:00:00,Preventive,,0.94,0.0,Completed
+MT-0329,M016,2026-10-02 08:00:00,Corrective,Sensor alignment,1.75,2.7,Completed
+MT-0330,M016,2026-10-21 14:00:00,Preventive,,0.35,0.0,Completed
+MT-0331,M016,2026-10-22 14:00:00,Preventive,,0.78,0.0,Completed
+MT-0332,M017,2026-05-02 08:00:00,Corrective,Air leak,2.25,2.53,Completed
+MT-0333,M017,2026-05-21 14:00:00,Preventive,,0.9,0.0,Completed
+MT-0334,M017,2026-05-22 14:00:00,Preventive,,0.72,0.0,Completed
+MT-0335,M017,2026-06-02 08:00:00,Corrective,Sensor alignment,1.24,2.23,Completed
+MT-0336,M017,2026-06-21 14:00:00,Preventive,,0.54,0.0,Completed
+MT-0337,M017,2026-06-22 14:00:00,Preventive,,0.6,0.0,Completed
+MT-0338,M017,2026-07-02 08:00:00,Corrective,Air leak,1.74,2.34,Completed
+MT-0339,M017,2026-07-21 14:00:00,Preventive,,0.31,0.0,Completed
+MT-0340,M017,2026-07-22 14:00:00,Preventive,,0.59,0.0,Completed
+MT-0341,M017,2026-08-02 08:00:00,Corrective,Air leak,1.98,2.53,Completed
+MT-0342,M017,2026-08-21 14:00:00,Preventive,,0.74,0.0,Completed
+MT-0343,M017,2026-08-22 14:00:00,Preventive,,0.88,0.0,Completed
+MT-0344,M017,2026-09-02 08:00:00,Corrective,Electrical fault,2.41,2.96,Completed
+MT-0345,M017,2026-09-21 14:00:00,Preventive,,0.67,0.0,Completed
+MT-0346,M017,2026-09-22 14:00:00,Preventive,,0.76,0.0,Completed
+MT-0347,M017,2026-10-02 08:00:00,Corrective,Air leak,2.23,3.17,Completed
+MT-0348,M017,2026-10-21 14:00:00,Preventive,,0.63,0.0,Completed
+MT-0349,M017,2026-10-22 14:00:00,Preventive,,0.88,0.0,Completed
+MT-0350,M018,2026-05-02 08:00:00,Corrective,Sensor alignment,2.18,2.64,Completed
+MT-0351,M018,2026-05-21 14:00:00,Preventive,,0.88,0.0,Completed
+MT-0352,M018,2026-05-22 14:00:00,Preventive,,0.36,0.0,Completed
+MT-0353,M018,2026-06-02 08:00:00,Corrective,Air leak,2.76,3.16,Completed
+MT-0354,M018,2026-06-21 14:00:00,Preventive,,0.7,0.0,Completed
+MT-0355,M018,2026-06-22 14:00:00,Preventive,,0.77,0.0,Completed
+MT-0356,M018,2026-07-02 08:00:00,Corrective,Air leak,1.67,2.27,Completed
+MT-0357,M018,2026-07-21 14:00:00,Preventive,,0.43,0.0,Completed
+MT-0358,M018,2026-07-22 14:00:00,Preventive,,0.45,0.0,Completed
+MT-0359,M018,2026-08-02 08:00:00,Corrective,Electrical fault,2.6,3.07,Completed
+MT-0360,M018,2026-08-21 14:00:00,Preventive,,0.79,0.0,Completed
+MT-0361,M018,2026-08-22 14:00:00,Preventive,,0.49,0.0,Completed
+MT-0362,M018,2026-09-02 08:00:00,Corrective,Sensor alignment,1.02,1.98,Completed
+MT-0363,M018,2026-09-21 14:00:00,Preventive,,0.47,0.0,Completed
+MT-0364,M018,2026-09-22 14:00:00,Preventive,,0.58,0.0,Completed
+MT-0365,M018,2026-10-02 08:00:00,Corrective,Air leak,2.11,2.5,Completed
+MT-0366,M018,2026-10-21 14:00:00,Preventive,,0.75,0.0,Completed
+MT-0367,M018,2026-10-22 14:00:00,Preventive,,0.64,0.0,Completed
+MT-0368,M019,2026-05-02 08:00:00,Corrective,Sensor alignment,2.59,2.86,Completed
+MT-0369,M019,2026-05-21 14:00:00,Preventive,,0.58,0.0,Completed
+MT-0370,M019,2026-05-22 14:00:00,Preventive,,0.47,0.0,Completed
+MT-0371,M019,2026-06-02 08:00:00,Corrective,Electrical fault,2.33,2.83,Completed
+MT-0372,M019,2026-06-21 14:00:00,Preventive,,0.67,0.0,Completed
+MT-0373,M019,2026-06-22 14:00:00,Preventive,,0.6,0.0,Completed
+MT-0374,M019,2026-07-02 08:00:00,Corrective,Electrical fault,2.49,2.95,Completed
+MT-0375,M019,2026-07-21 14:00:00,Preventive,,0.62,0.0,Completed
+MT-0376,M019,2026-07-22 14:00:00,Preventive,,0.51,0.0,Completed
+MT-0377,M019,2026-08-02 08:00:00,Corrective,Air leak,1.46,2.24,Completed
+MT-0378,M019,2026-08-21 14:00:00,Preventive,,0.38,0.0,Completed
+MT-0379,M019,2026-08-22 14:00:00,Preventive,,0.68,0.0,Completed
+MT-0380,M019,2026-09-02 08:00:00,Corrective,Sensor alignment,2.52,2.87,Completed
+MT-0381,M019,2026-09-21 14:00:00,Preventive,,0.82,0.0,Completed
+MT-0382,M019,2026-09-22 14:00:00,Preventive,,0.49,0.0,Completed
+MT-0383,M019,2026-10-02 08:00:00,Corrective,Electrical fault,2.18,2.99,Completed
+MT-0384,M019,2026-10-21 14:00:00,Preventive,,0.5,0.0,Completed
+MT-0385,M019,2026-10-22 14:00:00,Preventive,,0.37,0.0,Completed
+MT-0386,M020,2026-05-02 08:00:00,Corrective,Sensor alignment,1.39,1.77,Completed
+MT-0387,M020,2026-05-21 14:00:00,Preventive,,0.51,0.0,Completed
+MT-0388,M020,2026-05-22 14:00:00,Preventive,,0.8,0.0,Completed
+MT-0389,M020,2026-06-02 08:00:00,Corrective,Sensor alignment,1.25,1.49,Completed
+MT-0390,M020,2026-06-21 14:00:00,Preventive,,0.69,0.0,Completed
+MT-0391,M020,2026-06-22 14:00:00,Preventive,,0.79,0.0,Completed
+MT-0392,M020,2026-07-02 08:00:00,Corrective,Air leak,1.25,2.14,Completed
+MT-0393,M020,2026-07-21 14:00:00,Preventive,,0.37,0.0,Completed
+MT-0394,M020,2026-07-22 14:00:00,Preventive,,0.31,0.0,Completed
+MT-0395,M020,2026-08-02 08:00:00,Corrective,Air leak,1.57,2.15,Completed
+MT-0396,M020,2026-08-21 14:00:00,Preventive,,0.43,0.0,Completed
+MT-0397,M020,2026-08-22 14:00:00,Preventive,,0.34,0.0,Completed
+MT-0398,M020,2026-09-02 08:00:00,Corrective,Sensor alignment,2.88,3.46,Completed
+MT-0399,M020,2026-09-21 14:00:00,Preventive,,0.58,0.0,Completed
+MT-0400,M020,2026-09-22 14:00:00,Preventive,,0.35,0.0,Completed
+MT-0401,M020,2026-10-02 08:00:00,Corrective,Sensor alignment,2.26,2.5,Completed
+MT-0402,M020,2026-10-21 14:00:00,Preventive,,0.87,0.0,Completed
+MT-0403,M020,2026-10-22 14:00:00,Preventive,,0.96,0.0,Completed
+INVALID-000,M001,2026-05-02 08:00:00,Corrective,Air leak,-1.0,2.5,Completed
+INVALID-001,M999,2026-05-21 14:00:00,Preventive,,0.47,0.0,Completed
+INVALID-002,M001,invalid-date,Preventive,,0.4,0.0,Completed
+INVALID-003,M001,2026-06-02 08:00:00,Corrective,Electrical fault,1.2,-5.0,Completed
+MT-0005,M001,2026-06-21 14:00:00,Preventive,,0.36,0.0,Completed
+INVALID-005,M001,2026-06-22 14:00:00,Preventive,,-1.0,0.0,Completed
+INVALID-006,M999,2026-07-02 08:00:00,Corrective,Electrical fault,1.06,1.43,Completed
+INVALID-007,M001,invalid-date,Corrective,Electrical fault,2.2,2.85,Completed
+INVALID-008,M001,2026-07-21 14:00:00,Preventive,,0.75,-5.0,Completed
+MT-0010,M001,2026-07-26 14:00:00,Preventive,,0.68,0.0,Completed
+INVALID-010,M001,2026-08-02 08:00:00,Corrective,Sensor alignment,-1.0,2.11,Completed
+INVALID-011,M999,2026-08-06 08:00:00,Corrective,Air leak,2.52,2.85,Completed
+INVALID-012,M001,invalid-date,Preventive,,0.54,0.0,Completed
+INVALID-013,M001,2026-08-26 14:00:00,Preventive,,0.41,-5.0,Completed
+MT-0015,M001,2026-09-02 08:00:00,Corrective,Sensor alignment,2.91,3.38,Completed
+INVALID-015,M001,2026-09-06 08:00:00,Corrective,Air leak,-1.0,2.25,Completed
+INVALID-016,M999,2026-09-10 08:00:00,Corrective,Electrical fault,2.21,3.06,Completed
+INVALID-017,M001,invalid-date,Preventive,,0.62,0.0,Completed
+INVALID-018,M001,2026-09-26 14:00:00,Preventive,,0.39,-5.0,Completed
+MT-0020,M001,2026-10-02 08:00:00,Corrective,Air leak,2.84,3.1,Completed
+INVALID-020,M001,2026-10-06 08:00:00,Corrective,Air leak,-1.0,3.35,Completed
+INVALID-021,M999,2026-10-10 08:00:00,Corrective,Sensor alignment,2.15,2.91,Completed
+INVALID-022,M001,invalid-date,Preventive,,0.76,0.0,Completed
+INVALID-023,M002,2026-05-02 08:00:00,Corrective,Sensor alignment,2.55,-5.0,Completed
+MT-0025,M002,2026-05-21 14:00:00,Preventive,,0.91,0.0,Completed
+INVALID-025,M002,2026-05-22 14:00:00,Preventive,,-1.0,0.0,Completed
+INVALID-026,M999,2026-06-02 08:00:00,Corrective,Sensor alignment,1.91,2.78,Completed
+INVALID-027,M002,invalid-date,Preventive,,0.56,0.0,Completed

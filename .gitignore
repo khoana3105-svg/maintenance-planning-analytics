@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+archive/
+logs/
+outputs/run_*/
+exports/
+tests/*.xlsm
+~$*
+**/.pbi/
+*.abf

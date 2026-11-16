@@ -1,0 +1,4 @@
+﻿ControlType.Image | PM Compliance Rate 66.67%. |  | 0
+ControlType.Image | PM Tasks Due 12. |  | 0
+ControlType.Image | Overdue PM Count 1. |  | 0
+ControlType.Image | Due Soon PM Count 0. |  | 0

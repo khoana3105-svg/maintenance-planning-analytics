@@ -1,0 +1,6 @@
+{
+  "machine_month_combinations": 120,
+  "independent_metric_checks": 960,
+  "all_passed": true,
+  "edge_cases": "Counts and no-failure MTTR/MTBF passed"
+}

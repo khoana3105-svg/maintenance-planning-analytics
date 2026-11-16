@@ -1,0 +1,34 @@
+// Reference formulas. The PBIX/PBIP model is authoritative.
+
+Total Downtime Hours =
+COALESCE(SUM(vw_Breakdown_Analysis[Downtime_Hours]),0)
+
+Breakdown Count =
+VAR n = CALCULATE(COUNTROWS(vw_Breakdown_Analysis),vw_Breakdown_Analysis[Type]="Corrective") RETURN IF(ISINSCOPE(vw_Breakdown_Analysis[Failure_Mode]),n,COALESCE(n,0))
+
+Corrective Repair Hours =
+CALCULATE(SUM(vw_Breakdown_Analysis[Duration_Hours]), vw_Breakdown_Analysis[Type] = "Corrective")
+
+MTTR =
+DIVIDE([Corrective Repair Hours], [Breakdown Count])
+
+Planned Production Hours =
+SUM(Dim_Date[ScheduledHours]) * COUNTROWS(VALUES(Dim_Machine[Machine_ID]))
+
+MTBF =
+DIVIDE([Planned Production Hours]-[Total Downtime Hours],[Breakdown Count])
+
+PM Tasks Due =
+COALESCE(SUM(vw_PM_Performance[Eligible_Due]),0)
+
+On Time PM =
+COALESCE(SUM(vw_PM_Performance[On_Time]),0)
+
+PM Compliance Rate =
+DIVIDE([On Time PM],[PM Tasks Due])
+
+Overdue PM Count =
+COALESCE(CALCULATE(COUNTROWS(vw_PM_Performance),vw_PM_Performance[Alert_Status]="Overdue"),0)
+
+Due Soon PM Count =
+COALESCE(CALCULATE(COUNTROWS(vw_PM_Performance),vw_PM_Performance[Alert_Status]="Due Soon"),0)

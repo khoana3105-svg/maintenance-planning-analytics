@@ -1,0 +1,11 @@
+DEFINE
+    MEASURE Dim_Machine[Total Downtime Hours] = COALESCE(SUM(vw_Breakdown_Analysis[Downtime_Hours]), 0)
+    MEASURE Dim_Machine[Breakdown Count] =
+        VAR n = CALCULATE(COUNTROWS(vw_Breakdown_Analysis), vw_Breakdown_Analysis[Type] = "Corrective")
+        RETURN IF(ISINSCOPE(vw_Breakdown_Analysis[Failure_Mode]), n, COALESCE(n, 0))
+    MEASURE Dim_Machine[PM Tasks Due] = COALESCE(SUM(vw_PM_Performance[Eligible_Due]), 0)
+    MEASURE Dim_Machine[On Time PM] = COALESCE(SUM(vw_PM_Performance[On_Time]), 0)
+    MEASURE Dim_Machine[Overdue PM Count] = COALESCE(CALCULATE(COUNTROWS(vw_PM_Performance), vw_PM_Performance[Alert_Status] = "Overdue"), 0)
+    MEASURE Dim_Machine[Due Soon PM Count] = COALESCE(CALCULATE(COUNTROWS(vw_PM_Performance), vw_PM_Performance[Alert_Status] = "Due Soon"), 0)
+EVALUATE
+    ROW("Downtime",[Total Downtime Hours],"Breakdowns",[Breakdown Count],"DueSoon",[Due Soon PM Count],"PMDue",[PM Tasks Due])

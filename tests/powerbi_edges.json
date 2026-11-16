@@ -1,0 +1,12 @@
+[
+    {
+        "[Machines]":  20,
+        "[Events]":  403,
+        "[PM]":  240,
+        "[Days]":  184,
+        "[NoFailureMTTR]":  null,
+        "[NoFailureMTBF]":  null,
+        "[Overdue]":  5,
+        "[DueSoon]":  0
+    }
+]

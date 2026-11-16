@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.3.0/schema.json",
+  "themeCollection": {},
+  "settings": {
+    "useEnhancedTooltips": false
+  },
+  "annotations": [
+    {
+      "name": "SyntheticNotice",
+      "value": "Fully synthetic | May-Oct 2026 | PM snapshot 31 Oct 2026 | MTBF estimated"
+    }
+  ]
+}

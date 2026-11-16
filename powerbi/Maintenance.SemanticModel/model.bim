@@ -1,0 +1,501 @@
+{
+  "compatibilityLevel": 1606,
+  "model": {
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "0"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"Dim_Machine\",\"vw_Breakdown_Analysis\",\"vw_PM_Performance\",\"Dim_Date\"]"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "en-US",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "relationships": [
+      {
+        "name": "c399bdb1-152b-4096-a626-57cbd21055e8",
+        "fromColumn": "Machine_ID",
+        "fromTable": "vw_Breakdown_Analysis",
+        "toColumn": "Machine_ID",
+        "toTable": "Dim_Machine"
+      },
+      {
+        "name": "7ad4fd79-2814-4eae-9905-696e88e55170",
+        "fromColumn": "Machine_ID",
+        "fromTable": "vw_PM_Performance",
+        "toColumn": "Machine_ID",
+        "toTable": "Dim_Machine"
+      },
+      {
+        "name": "8bf8756c-b5d4-4715-914d-00b5e22311cb",
+        "fromColumn": "Event_Day",
+        "fromTable": "vw_Breakdown_Analysis",
+        "toColumn": "Date",
+        "toTable": "Dim_Date"
+      },
+      {
+        "name": "8c8ee76f-a76f-4c27-9de5-a6a59b21f951",
+        "fromColumn": "Due_Date",
+        "fromTable": "vw_PM_Performance",
+        "toColumn": "Date",
+        "toTable": "Dim_Date"
+      }
+    ],
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "Dim_Machine",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Machine_ID",
+            "dataType": "string",
+            "lineageTag": "1287c481-426b-4154-9f3d-6fd1bc04222c",
+            "sourceColumn": "Machine_ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Machine_Name",
+            "dataType": "string",
+            "lineageTag": "01062b29-a4f6-4bd9-be8f-91195d0847fb",
+            "sourceColumn": "Machine_Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Line_ID",
+            "dataType": "string",
+            "lineageTag": "81329647-c248-4c38-8b27-502107e3d8d4",
+            "sourceColumn": "Line_ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Criticality",
+            "dataType": "string",
+            "lineageTag": "97501b7d-2e74-47c5-97a5-46d547de2ca9",
+            "sourceColumn": "Criticality",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "069beecd-8b8e-4584-a879-19abaf30a795",
+        "measures": [
+          {
+            "name": "Total Downtime Hours",
+            "expression": "COALESCE(SUM(vw_Breakdown_Analysis[Downtime_Hours]),0)",
+            "formatString": "#,0.00",
+            "lineageTag": "4e87269a-56ae-4f31-accc-0bab27d03854"
+          },
+          {
+            "name": "Breakdown Count",
+            "expression": "VAR n = CALCULATE(COUNTROWS(vw_Breakdown_Analysis),vw_Breakdown_Analysis[Type]=\"Corrective\") RETURN IF(ISINSCOPE(vw_Breakdown_Analysis[Failure_Mode]),n,COALESCE(n,0))",
+            "formatString": "#,0",
+            "lineageTag": "0e043d06-b921-4bcd-860a-d755af328bc6"
+          },
+          {
+            "name": "Corrective Repair Hours",
+            "expression": "CALCULATE(SUM(vw_Breakdown_Analysis[Duration_Hours]), vw_Breakdown_Analysis[Type] = \"Corrective\")",
+            "formatString": "#,0.00",
+            "lineageTag": "9346324b-05b4-4529-8bce-1940009b3d11"
+          },
+          {
+            "name": "MTTR",
+            "expression": "DIVIDE([Corrective Repair Hours], [Breakdown Count])",
+            "formatString": "#,0.00",
+            "lineageTag": "a3b0967a-f679-4c1c-bea8-31d615898090"
+          },
+          {
+            "name": "Planned Production Hours",
+            "expression": "SUM(Dim_Date[ScheduledHours]) * COUNTROWS(VALUES(Dim_Machine[Machine_ID]))",
+            "formatString": "#,0.00",
+            "lineageTag": "cbfb09ed-8288-4fa8-9690-0812bef532b9"
+          },
+          {
+            "name": "MTBF",
+            "expression": "DIVIDE([Planned Production Hours]-[Total Downtime Hours],[Breakdown Count])",
+            "formatString": "#,0.00",
+            "lineageTag": "0a044380-32ed-425f-a91d-95da8c3e5341"
+          },
+          {
+            "name": "PM Tasks Due",
+            "expression": "COALESCE(SUM(vw_PM_Performance[Eligible_Due]),0)",
+            "formatString": "#,0",
+            "lineageTag": "891fb079-2a57-4cd1-b745-2da401002aae"
+          },
+          {
+            "name": "On Time PM",
+            "expression": "COALESCE(SUM(vw_PM_Performance[On_Time]),0)",
+            "formatString": "#,0",
+            "lineageTag": "8975cdd6-502d-4b06-a67e-7f33844af062"
+          },
+          {
+            "name": "PM Compliance Rate",
+            "expression": "DIVIDE([On Time PM],[PM Tasks Due])",
+            "formatString": "0.00%",
+            "lineageTag": "cbed2302-dc9a-4c21-9e0f-d771872d25dd"
+          },
+          {
+            "name": "Overdue PM Count",
+            "expression": "COALESCE(CALCULATE(COUNTROWS(vw_PM_Performance),vw_PM_Performance[Alert_Status]=\"Overdue\"),0)",
+            "formatString": "#,0",
+            "lineageTag": "7da39e22-2dda-4cbc-969f-70435d9456dd"
+          },
+          {
+            "name": "Due Soon PM Count",
+            "expression": "COALESCE(CALCULATE(COUNTROWS(vw_PM_Performance),vw_PM_Performance[Alert_Status]=\"Due Soon\"),0)",
+            "formatString": "#,0",
+            "lineageTag": "8170c223-efd8-48c8-a65d-5a0d6fa8bb4a"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Dim_Machine",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let Source=Sql.Database(\"localhost\",\"MaintenancePlanningJD\",[Query=\"SELECT [Machine_ID],[Machine_Name],[Line_ID],[Criticality] FROM dbo.[Dim_Machine]\",CreateNavigationProperties=false]) in Source"
+            }
+          }
+        ]
+      },
+      {
+        "name": "vw_Breakdown_Analysis",
+        "columns": [
+          {
+            "name": "Maintenance_ID",
+            "dataType": "string",
+            "lineageTag": "9cfe3ec6-3537-4011-9fcb-8de7a16cce2b",
+            "sourceColumn": "Maintenance_ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Machine_ID",
+            "dataType": "string",
+            "lineageTag": "31770691-3b1a-4cfe-ae17-aaa1803ddf10",
+            "sourceColumn": "Machine_ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Date",
+            "dataType": "dateTime",
+            "formatString": "yyyy-MM-dd",
+            "lineageTag": "46185ab8-7f5f-43a2-9e0c-520d46a4e263",
+            "sourceColumn": "Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Type",
+            "dataType": "string",
+            "lineageTag": "0fd32b48-49d0-425c-a55b-74c0b30838f4",
+            "sourceColumn": "Type",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Failure_Mode",
+            "dataType": "string",
+            "lineageTag": "59be7861-2646-4d3c-b08c-46898c84b4ad",
+            "sourceColumn": "Failure_Mode",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Duration_Hours",
+            "dataType": "double",
+            "lineageTag": "8541ae1f-7358-46ca-b77e-3f6051261de1",
+            "sourceColumn": "Duration_Hours",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Downtime_Hours",
+            "dataType": "double",
+            "lineageTag": "c23867b1-30f2-4bd8-8103-83982f3b9645",
+            "sourceColumn": "Downtime_Hours",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Status",
+            "dataType": "string",
+            "lineageTag": "26b8ea2d-0b8d-4e5e-b68d-f63d676d6dba",
+            "sourceColumn": "Status",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Event_Day",
+            "annotations": [
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "yyyy-MM-dd",
+            "lineageTag": "bb2eeea6-20dd-4d96-8324-e760af3e7088",
+            "sourceColumn": "Event_Day",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Is_Breakdown",
+            "dataType": "int64",
+            "lineageTag": "8dcd5bc7-ae6a-4710-bd2c-95f0ef3c8e0c",
+            "sourceColumn": "Is_Breakdown",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Machine_Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4c81b6cc-3fea-4c1d-b818-7ecb07db05ae",
+            "sourceColumn": "Machine_Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Line_ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6adb3a70-35bc-4a53-816d-3962e1fd1f61",
+            "sourceColumn": "Line_ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Criticality",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3e8b1b98-d372-4294-a5a0-af51c788bc1c",
+            "sourceColumn": "Criticality",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Occurrence_Number",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "67db30a0-09d9-416e-a2f6-2f35b39f7422",
+            "sourceColumn": "Occurrence_Number",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "f2e2f4ef-ba7e-455d-8cd4-94b811b4ea1b",
+        "partitions": [
+          {
+            "name": "vw_Breakdown_Analysis",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let Source=Sql.Database(\"localhost\",\"MaintenancePlanningJD\",[Query=\"SELECT [Maintenance_ID],[Machine_ID],[Date],[Type],[Failure_Mode],[Duration_Hours],[Downtime_Hours],[Status],[Event_Day],[Is_Breakdown],[Machine_Name],[Line_ID],[Criticality],[Occurrence_Number] FROM dbo.[vw_Breakdown_Analysis]\",CreateNavigationProperties=false]) in Source"
+            }
+          }
+        ]
+      },
+      {
+        "name": "vw_PM_Performance",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "PM_ID",
+            "dataType": "string",
+            "lineageTag": "abe93dee-11be-466d-901a-547903bc4b52",
+            "sourceColumn": "PM_ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Machine_ID",
+            "dataType": "string",
+            "lineageTag": "a4d59a42-7895-4609-8296-6ea9715771ae",
+            "sourceColumn": "Machine_ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "PM_Type",
+            "dataType": "string",
+            "lineageTag": "8e91cc72-6f88-4b1b-9e4d-1e81a954dfd2",
+            "sourceColumn": "PM_Type",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Due_Date",
+            "annotations": [
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "yyyy-MM-dd",
+            "lineageTag": "210395e2-b409-49ad-ab93-b618878cbfca",
+            "sourceColumn": "Due_Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Completed_Date",
+            "annotations": [
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "yyyy-MM-dd",
+            "lineageTag": "c3b4693e-fdd7-406f-a009-1ab5fb6dac6d",
+            "sourceColumn": "Completed_Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Status",
+            "dataType": "string",
+            "lineageTag": "44410c53-45d3-4434-950d-3e981ad1c01d",
+            "sourceColumn": "Status",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Eligible_Due",
+            "dataType": "int64",
+            "lineageTag": "63b61655-19dc-4ea0-952c-e1f5df9fcd7a",
+            "sourceColumn": "Eligible_Due",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "On_Time",
+            "dataType": "int64",
+            "lineageTag": "35a9049c-ea41-42ff-a4fb-018811afa0ae",
+            "sourceColumn": "On_Time",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Alert_Status",
+            "dataType": "string",
+            "lineageTag": "bf743256-cd53-4086-adbd-94415fe7f9d4",
+            "sourceColumn": "Alert_Status",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Machine_Name",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3086f41f-bd48-41ca-9329-20436d636dbb",
+            "sourceColumn": "Machine_Name",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Line_ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "66bf23ba-bd4e-4878-90f9-fe3bbb42228f",
+            "sourceColumn": "Line_ID",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Criticality",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "35c7f58e-acf6-431d-828d-8779f7836d2b",
+            "sourceColumn": "Criticality",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "ef118495-2f20-4c76-99b4-62f4d584e533",
+        "partitions": [
+          {
+            "name": "vw_PM_Performance",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": "let Source=Sql.Database(\"localhost\",\"MaintenancePlanningJD\",[Query=\"SELECT [PM_ID],[Machine_ID],[PM_Type],[Due_Date],[Completed_Date],[Status],[Eligible_Due],[On_Time],[Alert_Status],[Machine_Name],[Line_ID],[Criticality] FROM dbo.[vw_PM_Performance]\",CreateNavigationProperties=false]) in Source"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Dim_Date",
+        "columns": [
+          {
+            "name": "Date",
+            "dataType": "dateTime",
+            "formatString": "yyyy-MM-dd",
+            "isKey": true,
+            "lineageTag": "9b0ecf57-1aaa-4939-9f90-bea28848a276",
+            "sourceColumn": "Date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "YearMonth",
+            "dataType": "string",
+            "lineageTag": "b20c3d83-0ea7-448c-be3e-f96cdbbd2034",
+            "sourceColumn": "YearMonth",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ScheduledHours",
+            "dataType": "int64",
+            "lineageTag": "0a3da082-f39d-4607-90aa-386406487699",
+            "sourceColumn": "ScheduledHours",
+            "summarizeBy": "none"
+          }
+        ],
+        "dataCategory": "Time",
+        "lineageTag": "cd942923-a47d-4051-a6f4-8843fac0350a",
+        "partitions": [
+          {
+            "name": "Dim_Date",
+            "mode": "import",
+            "source": {
+              "expression": "let Source=Table.FromList(List.Dates(#date(2026,5,1),184,#duration(1,0,0,0)),Splitter.SplitByNothing(),{\"Date\"}), Typed=Table.TransformColumnTypes(Source,{{\"Date\",type datetime}}), Month=Table.AddColumn(Typed,\"YearMonth\",each Date.ToText(Date.From([Date]),\"yyyy-MM\"),type text), Hours=Table.AddColumn(Month,\"ScheduledHours\",each if Date.Day([Date])<=26 then 16 else 0,Int64.Type) in Hours",
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

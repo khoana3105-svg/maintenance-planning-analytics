@@ -1,0 +1,3 @@
+# Windows + PowerShell + SQL Server Windows Authentication
+# Tested Python 3.14, no package installation performed.
+pandas>=2.0

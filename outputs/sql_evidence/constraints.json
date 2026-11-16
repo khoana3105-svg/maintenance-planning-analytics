@@ -1,0 +1,14 @@
+﻿[
+    {
+        "Test":  "Duplicate key",
+        "Blocked":  true
+    },
+    {
+        "Test":  "Foreign key",
+        "Blocked":  true
+    },
+    {
+        "Test":  "Negative duration",
+        "Blocked":  true
+    }
+]

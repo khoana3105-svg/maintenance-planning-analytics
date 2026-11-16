@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "name": "assumptions",
+  "position": {
+    "x": 20,
+    "y": 625,
+    "z": 1,
+    "height": 150,
+    "width": 1400,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "MTBF is an estimate: (planned production hours − unplanned downtime) / breakdowns.\nCalendar: 2 shifts × 8 hours × 26 days per month = 2,496 hours per machine over six months.\nChoose month, production line or machine above to inspect the same scope across visuals.",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "16pt",
+                      "fontWeight": "normal",
+                      "color": "#19324D"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
